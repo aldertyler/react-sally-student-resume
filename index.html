@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sally Student Resume</title>
+  </head>
+  <body>
+    <div id="application-root"></div>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/babel-standalone@6/babel.min.js"
+    ></script>
+
+    <script type="text/babel">
+      function App(props) {
+        return <div>{props.children}</div>;
+      }
+
+      ReactDOM.render(
+        <App className="page-header">
+          <header>
+            <h1>Sally Student</h1>
+          </header>
+          <section>
+            <img
+              className="sally-student-pic"
+              src="https://ia.media-imdb.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_UX214_CR0,0,214,317_AL_.jpg"
+              alt="Sally Student, Resume Picture"
+            />
+          </section>
+          <main>
+            <section className="contact-info">
+              <header>
+                <h4>Contact Information</h4>
+              </header>
+              <address>
+                <p>
+                  <a href="mailto:sallystudent@sallystudent.com">
+                    sallystudent@sallystudent.com
+                  </a>
+                </p>
+                <p>
+                  <a href="tel:+555-555-0123">+555-555-0123</a>
+                </p>
+              </address>
+            </section>
+            <section>
+              <header>
+                <h2>Master Blackbelt Level 7 Code Ninja</h2>
+              </header>
+              <p>All about that radness yo.</p>
+            </section>
+          </main>
+          <section>
+            <header>
+              <h3>Education</h3>
+            </header>
+            <ul>
+              <li>Super secret ninja coding dojo</li>
+              <li>
+                One semester at Hogwarts(supspended for inapropriate use of
+                magic)
+              </li>
+            </ul>
+          </section>
+          <section>
+            <header>
+              <h3>Employment</h3>
+            </header>
+            <ol>
+              <li>
+                <p>
+                  Ninja Coding Company X, Junior Ninja,{" "}
+                  <time dateTime="2017-05-05">2017</time> to{" "}
+                  <time dateTime="2018-06-06">2018</time>. Duties include: Lorem
+                  ipsum dolor sit amet, consectetur adipisicing elit. Vitae
+                  veritatis sed laborum, NINJA STUFF! dolore asperiores ea enim,
+                  hic fuga corporis? Id cupiditate, voluptatibus veniam
+                  doloribus consectetur quia! Quae, eveniet?
+                </p>
+              </li>
+              <li>
+                <p>
+                  Ninja Coding Company Y, Mid Level Ninja,{" "}
+                  <time dateTime="2018-06-21">2018</time> to{" "}
+                  <time dateTime="2019-10-15">2016</time>. Duties include: Lorem
+                  ipsum dolor sit amet, consectetur adipisicing elit. Iste
+                  eligendi distinctio MORE BETTER NINJA STUFF! aliquid aut autem
+                  doloribus delectus necessitatibus possimus tempora, ipsam
+                  sequi, quae architecto maxime asperiores qui voluptate.
+                </p>
+              </li>
+              <li>
+                <p>
+                  TMNT Coding Company, Ninja Turtle,
+                  <time dateTime="2019-10-16">2019</time> to{" "}
+                  <time dateTime="2020-01-16">Present</time>. Duties include:
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Culpa est FIGHTING SHREDDER! fugit quis accusantium hic
+                  assumenda, dolorem autem dolor voluptatibus dolore sunt sed
+                  labore neque, saepe illum et!
+                </p>
+              </li>
+            </ol>
+          </section>
+          <footer>
+            <p>&#169;2019 Sally A. Student</p>
+          </footer>
+        </App>,
+        document.querySelector("#application-root")
+      );
+    </script>
+  </body>
+</html>
